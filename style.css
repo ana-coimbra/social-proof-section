@@ -186,6 +186,176 @@ a:hover {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1440px) {
+  .top-img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 10rem;
+  }
+
+  .bottom-img {
+    position: absolute;
+    z-index: 0;
+    bottom: -5rem;
+    right: 0;
+  }
+
+  .top-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 10.5rem auto 6rem;
+  }
+
+  .description {
+    grid-column: 1;
+    margin-left: 10rem;
+    width: 470px;
+  }
+
+  .description h1 {
+    color: var(--darkmagenta);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .description p {
+    color: var(--greymagenta);
+
+    margin-top: 1rem;
+    line-height: 1.8;
+  }
+
+  .rating {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: 10rem;
+  }
+
+  .reviews,
+  .report-guru,
+  .best-tech {
+    background-color: var(--lightmagenta);
+    border-radius: 10px;
+    width: 30rem;
+    height: 4rem;
+    text-indent: 2rem;
+  }
+
+  .reviews img,
+  .report-guru img,
+  .best-tech img {
+    margin-top: 24px;
+    padding: 0 2px;
+  }
+
+  .reviews p,
+  .report-guru p,
+  .best-tech p {
+    color: var(--darkmagenta);
+    font-weight: 700;
+    display: inline;
+    padding-left: 1.5rem;
+  }
+
+  .report-guru {
+    margin-left: 4rem;
+  }
+
+  .best-tech {
+    margin-left: 8rem;
+  }
+
+  .bottom-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .colton {
+    margin-left: 10rem;
+  }
+
+  .irene {
+    margin: 2rem auto;
+  }
+
+  .anne {
+    margin-top: 4rem;
+    margin-right: 10rem;
+  }
+
+  .colton,
+  .irene,
+  .anne {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--darkmagenta);
+    border-radius: 15px;
+    width: 22rem;
+    height: 14.5rem;
+  }
+
+  .colton-profile,
+  .irene-profile,
+  .anne-profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2.5rem;
+  }
+
+  .profile-img {
+    border-radius: 100%;
+    width: 40px;
+    margin-left: 2rem;
+  }
+
+  .profile-details {
+    font-size: 13px;
+    margin-top: 0.25rem;
+    margin-left: -5rem;
+    width: 60%;
+  }
+
+  .profile-name {
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .profile-job {
+    color: var(--pink);
+    margin-top: 5px;
+  }
+
+  .testimonial {
+    font-size: 13px;
+    color: var(--white);
+    line-height: 1.8;
+    margin: -0.25rem 2rem;
+  }
+
+  .attribution {
+    color: var(--pink);
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 3rem;
+  }
+
+  a {
+    color: var(--pink);
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+  }
+
+  a:hover {
+    color: var(--darkmagenta);
+    cursor: pointer;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .top-img {
     content: url(images/bg-pattern-top-mobile.svg);
